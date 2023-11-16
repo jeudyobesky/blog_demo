@@ -2,8 +2,9 @@
   <p>
     <strong>Title:</strong>
     <%= post.title %>
+    <h4> Posted_by <%= post.user.email %> </h4>
   </p>
-
+  <h6><%= pluralize(post.views, "view") %></h6>
   <p>
     <strong>Body:</strong>
     <%= post.body %>
